@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://kit.fontawesonme.com/14273d579a.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <title>ACTUALITE</title>
+    </head>
+    <style>
+        .card {
+            transform: scale(1);
+            transition: transform ease-in-out 1s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"
+                    ><img
+                        src="images/Screenshot_20220622-133325.jpg"
+                        alt="Site logo"
+                        width="70"
+                        height="70"
+                        class="d-inline-block"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse fs-4 justify-content-end"
+                    id="navbarContent"
+                >
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link text-white"
+                                aria-current="page"
+                                href="index.html"
+                                >Acceuil</a
+                            >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Articles
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark gy-5 fs-5"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="histoire.html"
+                                        >Histoire</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="actualité.html"
+                                        >Actualité</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="musique.html"
+                                        >Musique</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="cinema.html"
+                                        >Cinema</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sport.html"
+                                        >Sport</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                id="navbarDropdown2"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Liens
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark gy-5 fs-5"
+                                aria-labelledby="navbarDropdown2"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="inscription.html"
+                                        >Inscription</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="connexion.html"
+                                        >Connexion</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="a_propos.html"
+                                        >A propos</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="contact.html"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form role="search" class="d-flex ms-5">
+                        <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Rechercher..."
+                            aria-label="Search"
+                        />
+                        <a class="btn btn-primary mx-3" href="#">Rechercher</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <section class="mt-5 bg-gradient pt-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col text-center text-danger">
+                        <h1
+                            style="
+                                font-family: 'Tibetan Machine Uni';
+                                font-size: 4em;
+                            "
+                        >
+                            <marquee>ACTUALITE</marquee>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="card">
+                            <img
+                                src="images/poutine.jpg"
+                                alt="Vladmir Poutine"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-5">
+                                <h3 class="card-title text-primary">
+                                    VLADIMIR POUTINE, VICTIME D’UN MALAISE ? SES
+                                    MEDECINS LUI AURAIENT INTERDIT DE FAIRE DE
+                                    LONGUES APPARITIONS PUBLIQUES
+                                </h3>
+                                <p>
+                                    Vladimir Poutine a reçu une « assistance
+                                    médicale urgente » plus tôt cette semaine
+                                    après avoir été « frappé par un malaise »,
+                                    selon des sources du Kremlin citées par le
+                                    journal du Sun.
+                                </p>
+                                <p>
+                                    Le président russe aurait reçu l’ordre de
+                                    ses médecins de ne pas faire de « longues »
+                                    apparitions publiques. Vladimir Poutine se
+                                    serait senti mal alors qu’il parlait à ses
+                                    chefs militaires et aurait souffert de « de
+                                    vertiges » alors qu’il se levait de son
+                                    bureau après une session en vidéoconférence
+                                    qui a duré plus de 90 minutes.
+                                </p>
+                                <p>
+                                    Ces allégations sont apparues sur la chaîne
+                                    Général SVR sur l’application de messagerie
+                                    Telegram, qui est prétendument gérée par une
+                                    source proche du Kremlin. Ce rapport suggère
+                                    que Poutine « avait besoin d’une assistance
+                                    médicale urge la part de médecins ».
+                                </p>
+                                <p>
+                                    Depuis de nombreuses semaines, l’état de
+                                    santé de Vladimir Poutine est l’objet de
+                                    nombreuses rumeurs. Plusieurs proches du
+                                    Kremlin affirment que le dirigeant russe
+                                    souffre d’une longue maladie qui a nécessité
+                                    une opération chirurgicale.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="card">
+                            <img
+                                src="images/oo_copy_986x404.jpg"
+                                alt="Vladmir Poutine"
+                                class="card-img-top"
+                            />
+                            <div class="card-body text-center fs-4">
+                                <h3 class="card-title text-primary text-start">
+                                    DÉPENDANCE ALIMENTAIRE ET MILITAIRE : LE
+                                    MALI A L’AUBE DU CHANGEMENT DE « MAÎTRE »!
+                                </h3>
+                                <p class="text-start">
+                                    Le divorce du couple France-Mali est sur le
+                                    point d’être consommé. La tension
+                                    diplomatique a finalement conduit au renvoi
+                                    de Barkhane, de l’ambassadeur français et
+                                    enfin à la dénonciation de l’accord de
+                                    défense. Ce vieux couple n’a pas su
+                                    surmonter ses hauts et bas et chemine
+                                    inexorablement vers la fin de toute
+                                    collaboration, la France soupçonnée, à
+                                    demi-mot, d’avoir fomenté la dernière
+                                    tentative de coup d’Etat au Mali.
+                                </p>
+                                <a
+                                    class="btn btn-primary fs-4 mt-4 stretched-link"
+                                    href="mali.html"
+                                    data-bs-target="#card1"
+                                    aria-controls="card1"
+                                >
+                                    Lire la suite</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="card">
+                            <img
+                                src="images/usa_copy_986x404.png"
+                                alt="USA"
+                                class="card-img-top"
+                            />
+                            <div class="card-body text-center fs-4">
+                                <h1 class="card-title text-primary text-start">
+                                    LES ETATS-UNIS FONT UN 1<sup>er</sup> PAS
+                                    VERS UN ENCADREMENT DES ARMES A FEU
+                                </h1>
+                                <p class="text-start">
+                                    3 semaines après le massacre d'Uvalde, et au
+                                    lendemain de manifestations massives aux
+                                    Etats-Unis pour un meilleur contrôle des
+                                    armes à feu, le Sénat est parvenu hier à un
+                                    accord bipartisan, « une véritable 1ère en
+                                    25 ans » se félicite le Washington Post,
+                                    « même si nous aurions aimé en voir
+                                    d'avantage », nous dit l'éditorialiste
+                                    du Post, ces 1ères mesures constituent « un
+                                    1er pas très encourageant ». « Bien qu'il ne
+                                    fasse pas passer de 18 à 21 ans l'âge pour
+                                    l’achat des fusils d'assaut », ce plan
+                                    renforce « les vérifications des antécédents
+                                    judiciaires et psychologiques des acheteurs
+                                    de moins de 21 ans », un point
+                                    « essentiel » note le New York Times pour
+                                    qui cet accord « est certes en deçà de ce
+                                    que souhaitaient les démocrates, mais
+                                    beaucoup plus que ce qu'ils attendaient ».
+                                    Sentiment partagé par la presse européenne,
+                                    le Frankfurter Allgemeine Zeitung salue
+                                    ainsi « une proposition historique », « la
+                                    plus importante depuis les années 90 », se
+                                    félicite également El Pais, « même les
+                                    défenseurs du contrôle des armes ont salué
+                                    ce progrès », note de son côté
+                                    le Guardian. Reste maintenant à faire
+                                    adopter la loi par les 2 chambres du Congrès
+                                    « et ce ne sera sans doute pas facile »,
+                                    estime le New York Times, cette fois
+                                    « l'échec ne doit pas être une option »,
+                                    souligne le Wall Street Journal. « Cet
+                                    accord ne sauvera pas toutes les vies
+                                    perdues, mais il en sauvera quelques-unes »,
+                                    insiste l'éditorialiste du Post « c'est pour
+                                    ça que nous demandons instamment au Congrès
+                                    de l'approuver ».
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="card">
+                            <img
+                                src="images/cedeao_copy_986x404.png"
+                                alt="MALI"
+                                class="card-img-top"
+                            />
+                            <div class="card-body text-center fs-4">
+                                <h3 class="card-title text-primary text-start">
+                                    MALI : QUELLE EST LA NOUVELLE DONNE POUR LES
+                                    NEGOCIATIONS ENTRE BAMAKO ET LA CEDEAO ?
+                                </h3>
+                                <p class="text-start">
+                                    L’annonce unilatérale par Bamako, lundi 6
+                                    juin 2022, de prolonger la transition pour
+                                    une durée de deux ans, alors que les
+                                    négociations avec l’organisation
+                                    ouest-africaine sont toujours en cours,
+                                    change la situation. La CEDEAO a
+                                    « regretté » cette décision tout en
+                                    maintenant le dialogue. Les échanges
+                                    s’éternisaient depuis l’instauration de
+                                    sanctions économiques contre le Mali en
+                                    janvier, mais de nombreux signaux semblaient
+                                    montrer qu’un compromis était proche. Un peu
+                                    plus de trois jours après la publication du
+                                    décret présidentiel qui a surpris tout le
+                                    monde, les langues des diplomates se
+                                    délient.
+                                </p>
+                                <a
+                                    class="btn btn-primary fs-4 mt-4 stretched-link"
+                                    href="cedeao.html"
+                                    data-bs-target="#card1"
+                                    aria-controls="card1"
+                                >
+                                    Lire la suite</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="card">
+                            <img
+                                src="images/unicef_copy_986x404.png"
+                                alt="UNICEF"
+                                class="card-img-top"
+                            />
+                            <div class="card-body text-center fs-4">
+                                <h3 class="card-title text-primary text-start">
+                                    SOMALIE : L’UNICEF TIRE LA SONNETTE D’ALARME
+                                    FACE A LA FAIN
+                                </h3>
+                                <p class="text-start">
+                                    Après trois saisons de faibles
+                                    précipitations et une quatrième en vue, la
+                                    Somalie, ravagée par des décennies de
+                                    guerre, a besoin d'un soutien humanitaire
+                                    international urgent, a averti le Fonds des
+                                    Nations unies pour l'enfance (UNICEF).
+                                </p>
+                                <a
+                                    class="btn btn-primary fs-4 mt-4 stretched-link"
+                                    href="unicef.html"
+                                    data-bs-target="#card1"
+                                    aria-controls="card1"
+                                >
+                                    Lire la suite</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (
+                tooltipTriggerEl
+            ) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        </script>
+    </body>
+    <footer>
+        <div class="bg-secondary mt-5">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col fs-4">
+                        <ul class="list-inline text-center text-white">
+                            <li class="list-inline-item">
+                                <a href="a_propos.html" class="text-white"
+                                    >A propos</a
+                                >
+                            </li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="#"
+                                    class="text-white"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mentionslegales"
+                                    >Mentions légales</a
+                                >
+                            </li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="#"
+                                    class="text-white"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#termes"
+                                    >Conditions d'utilisations</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-white mt-3">
+                    <div class="col-12 col-md-4">
+                        <p class="fs-4 mt-3 text-center">
+                            H-BLOG/Copyright © 2022. Tous droits réservés.
+                        </p>
+                    </div>
+                    <div
+                        class="col-12 text-center mt-3 mt-md-0 col-md-3 offset-md-5"
+                    >
+                        <h6 class="footer__title fs-4">Contacts</h6>
+                        <ul class="footer__list"></ul>
+                        <ul class="list-inline fs-3">
+                            <li class="list-inline-item">
+                                <a
+                                    href="mailto:akodjenouherve13@gmail.com"
+                                    data-bs-toggle="tooltip"
+                                    title="E-mail"
+                                    ><i
+                                        class="bi bi-envelope-fill text-danger bg-white"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://www.facebook.com/jonathan.peter.31149"
+                                    data-bs-toggle="tooltip"
+                                    title="Facebook"
+                                >
+                                    <i
+                                        class="bi bi-facebook text-primary bg-white"
+                                    ></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://wa.me/+22966748936"
+                                    data-bs-toggle="tooltip"
+                                    title="Whatsapp"
+                                    ><i
+                                        class="bi bi-whatsapp text-white bg-success"
+                                    ></i
+                                ></a>
+                            </li>
+                            <p>
+                                <li class="list-inline-item">
+                                    <i class="bi bi-phone text-light"></i>
+                                    +22966748936
+                                </li>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade text-dark"
+            id="mentionslegales"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Mentions légales
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aliquam sit amet gravida dolor, bibendum
+                            mollis dolor. Mauris ullamcorper vulputate sapien,
+                            non molestie urna hendrerit finibus. Sed at est
+                            malesuada, mattis nibh vitae, porta justo. Duis
+                            vestibulum ex id nisl egestas facilisis. Cras eget
+                            enim vestibulum, suscipit ipsum quis, sollicitudin
+                            erat. Aliquam gravida nulla in hendrerit rutrum.
+                            Proin a augue enim. Aliquam fringilla venenatis sem,
+                            sed pulvinar turpis. Sed lacinia augue ac purus
+                            fringilla volutpat. Aliquam efficitur iaculis libero
+                            in efficitur. Vestibulum consectetur arcu eget nisi
+                            viverra dignissim. Nulla facilisi. Donec at dui
+                            sapien. Aenean pretium mi a turpis vehicula pretium.
+                        </p>
+                        <p>
+                            Curabitur laoreet dui vel imperdiet ullamcorper.
+                            Suspendisse sollicitudin odio non nibh ullamcorper
+                            semper ac ut ipsum. Cras auctor, lectus id bibendum
+                            feugiat, ex quam tristique tortor, sollicitudin
+                            efficitur purus justo non lorem. In hac habitasse
+                            platea dictumst. Cras eget lacus ac nibh posuere
+                            fermentum a sed lorem. Donec in mauris purus. Proin
+                            in quam ut odio pulvinar sollicitudin. Donec feugiat
+                            sapien ac orci vestibulum, vel tincidunt leo tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade text-dark"
+            id="termes"
+            tabindex="-1"
+            aria-labelledby="exampleModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal">
+                            Conditions d'utilisation
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aliquam sit amet gravida dolor, bibendum
+                            mollis dolor. Mauris ullamcorper vulputate sapien,
+                            non molestie urna hendrerit finibus. Sed at est
+                            malesuada, mattis nibh vitae, porta justo. Duis
+                            vestibulum ex id nisl egestas facilisis. Cras eget
+                            enim vestibulum, suscipit ipsum quis, sollicitudin
+                            erat. Aliquam gravida nulla in hendrerit rutrum.
+                            Proin a augue enim. Aliquam fringilla venenatis sem,
+                            sed pulvinar turpis. Sed lacinia augue ac purus
+                            fringilla volutpat. Aliquam efficitur iaculis libero
+                            in efficitur. Vestibulum consectetur arcu eget nisi
+                            viverra dignissim. Nulla facilisi. Donec at dui
+                            sapien. Aenean pretium mi a turpis vehicula pretium.
+                        </p>
+                        <p>
+                            Curabitur laoreet dui vel imperdiet ullamcorper.
+                            Suspendisse sollicitudin odio non nibh ullamcorper
+                            semper ac ut ipsum. Cras auctor, lectus id bibendum
+                            feugiat, ex quam tristique tortor, sollicitudin
+                            efficitur purus justo non lorem. In hac habitasse
+                            platea dictumst. Cras eget lacus ac nibh posuere
+                            fermentum a sed lorem. Donec in mauris purus. Proin
+                            in quam ut odio pulvinar sollicitudin. Donec feugiat
+                            sapien ac orci vestibulum, vel tincidunt leo tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

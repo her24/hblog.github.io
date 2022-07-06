@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesonme.com/14273d579a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>MUSIQUE</title>
+</head>
+<style>
+    body{
+        background-color: rgb(153, 184, 184);
+    }
+    .card {
+        transform: scale(1);
+        transition: transform ease-in-out 1s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+    h4[class*="card-title "]
+    {
+        color: rgb(227, 175, 2);
+    }
+    div[class*=alert]
+    {
+        background-color: rgb(143, 200, 154);
+    }
+</style>
+<header class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="images/Screenshot_20220622-133325.jpg" alt="Site logo"
+                    width="70" height="70" class="d-inline-block" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-4 justify-content-end" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Acceuil</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Articles
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark gy-5 fs-5" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="histoire.html">Histoire</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="actualité.html">Actualité</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="musique.html">Musique</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="cinema.html">Cinema</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="sport.html">Sport</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Liens
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark gy-5 fs-5" aria-labelledby="navbarDropdown2">
+                            <li class="nav-item">
+                                <a class="dropdown-item" aria-current="page" href="inscription.html">Inscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" aria-current="page" href="connexion.html">Connexion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" aria-current="page" href="a_propos.html">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form role="search" class="d-flex ms-5">
+                    <input type="search" class="form-control" placeholder="Rechercher..." aria-label="Search" />
+                    <a class="btn btn-primary mx-3" href="#">Rechercher</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section class="mt-5 bg-gradient pt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col text-center text-danger">
+                    <h1 style="
+                                font-family: 'Tibetan Machine Uni';
+                                font-size: 4em;
+                            ">
+                        <marquee>MUSIQUE</marquee>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-danger fw-bold alert-dismissible fade show" role="alert">
+                        <h3 class="alert-heading text-danger fw-bold">Découvrez l'histoire</h3>
+                        <br><br>
+                        <button type="button" class="btn-close bg-danger" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                        <cite>
+                            <img src="images/téléchargement (16)_copy_264x247.jpeg" alt="Music"
+                                class="img-fluid text-center float-lg-start float-start mx-3 ">
+                            <h4 class="text-dark mt-5"> Vous voulez télecharger des vidéos de musique au format mp3 et
+                                mp4 ?
+                            </h4>
+                        </cite>
+                        <br><br><br>
+                        <p class="mt-5 fs-5 text-danger ">Tubidy répond à vos besoins <a href="https://tubidy.com/"
+                                class="btn btn-primary position-relative ">Cliquez_sur_ce_lien
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                    <span class="visually-hidden"></span>
+                                </span></a></p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 gy-md-0 mt-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (10)_copy_800x600_1.jpeg" alt="Awal" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">"Awal", la transe et les mirages
+                                d’Al-Qasar
+                            </h4>
+                            <h5>Le collectif psyché-rock annonce son premier album et dévoile un clip hypnotique où
+                                s’invite le guitariste Lee Ranaldo, à découvrir en avant-première.
+                            </h5>
+                            <p>Qui donc sommes-nous ? Cette interrogation existentielle choisie par Al-Qasar pour
+                                intituler leur premier album résonne bien comme une question lancée à toute notre
+                                époque.
+                            </p>
+                            <a class="btn btn-success stretched-link" href="awal.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (11)_copy_800x800_1.jpeg" alt="David Walters"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">La soul créole ensoleillée de David
+                                Walters
+                            </h4>
+                            <h5>Le chanteur, multi-instrumentiste et aventurier dévoile "No One", un extrait de son
+                                nouvel EP ultra-dansant qui mêle ses influences afro-caribéennes au folk et aux beats
+                                électroniques.</h5>
+                            <p>Après Soleil Kréyol, en hommage à la richesse du métissage musical des caraïbes et au
+                                groove new-yorkais des années 70 et 80.
+                            </p>
+                            <a class="btn btn-success stretched-link" href="david.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (12)_copy_800x800_2.jpeg" alt="Idrissa" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">"Le Tioko​-​Tioko", l'album oublié du
+                                Malien Idrissa Soumaoro</h4>
+                            <h5>Le label Mr Bongo réédite cet album rare enregistré à Bamako en 1978 avec l'orchestre de
+                                jeunes non-voyants l’Eclipse de L’IJA et gravé en vinyle en Allemagne de l’Est.
+                            </h5>
+                            <p>Originaire de la commune rurale Ouélessébougou proche de Bamako, le chanteur et
+                                polyinstrumentiste Idrissa Soumaoro est de ces musiciens mêlant l'art à l'enseignement
+                                et dont les engagements profonds expliquent peut être une discographie bien trop rare.
+                            </p>
+                            <a class="btn btn-success stretched-link" href="idrissa.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (13)_copy_800x600.jpeg" alt="Beyonce" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase">Beyoncé est de retour avec un nouvel album</h4>
+                            <h5>Beyoncé a annoncé la sortie d'un nouveau projet.
+                            </h5>
+                            <p>Après plusieurs jours d'activité sur le site officiel de Beyoncé, TIDAL a officiellement
+                                annoncé le titre et la date de sortie du nouvel album de Queen B.
+                            </p>
+                            <p>Intitulé RENAISSANCE - act i, le service de streaming, détenu par JAY-Z, a confirmé une
+                                date de sortie pour le 29 juillet, tandis que la page Apple Music de l'album a révélé un
+                                total de 16 morceaux.
+                            </p>
+                            <a class="btn btn-success stretched-link" href="beyonce.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gy-4 gy-md-0 mt-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (14)_copy_800x600_2.jpeg" alt="ed Sheeran" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">Leto x Ed Sheeran : le remix de "2step"
+                                arrive ce soir</h4>
+                            <h5>Ed Sheeran va donner une nouvelle dimension à son titre "2Step" en s'accompagnant de
+                                notre Leto national.
+                            </h5>
+                            <p>Ed Sheeran a sorti en 2021 son album (=) pour Equals et parmi son opus, on y retrouve le
+                                morceau 2step qui a eu par la suite plusieurs remixes avec de nombreux artistes
+                                internationaux dont le rappeur Lil Baby. Bonne nouvelle pour les Français, une version
+                                avec un artiste de l'hexagone va voir le jour et c'est Leto qui sera sur ce remix.
+                            </p>
+                            <a class="btn btn-success stretched-link" href="ed.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/images (8)_copy_800x600_2.jpeg" alt="Gims" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">Gims annonce "L'empire de Méroé",
+                                nouvelle réédition de
+                                l'album "Le Fléau"</h4>
+                            <h5>Gims prépare la sortie d'une nouvelle réédition de son album "Le fléau" pour le 3
+                                décembre. "L'empire de Méroé" contiendra 4 chansons inédites dont des duos avec Naps et
+                                Vitaa. Toutes les infos !</h5>
+                            <p>Gims croit beaucoup au "Fléau". En décembre dernier, la star a dévoilé son quatrième solo
+                                qui marquait pour l'occasion son grand retour dans le rap. Après les tubes "Bella" ou
+                                "La même", le rappeur a décidé de se refaire une place dans le game en collaborant avec
+                                Leto, Vald, Kaaris ou Heuss L'Enfoiré. </p>
+                            <a class="btn btn-success stretched-link" href="gims.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/téléchargement (15)_copy_800x600.jpeg" alt="kidjo" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">Angélique Kidjo dévoile son nouvel album,
+                                Mother Nature
+                            </h4>
+                            <h5>La star béninoise Angélique Kidjo a dévoilé son nouvel album, Mother Nature. L'opus de
+                                13 titres est disponible depuis le 18 juin.</h5>
+                            <p>Après Celia qui lui a valu un grammy Awards, Angélique Kidjo sort Mother Nature chez
+                                Decca Records France, sa première production de chansons originales en sept ans, portant
+                                son total à 18.
+
+                            </p>
+                            <a class="btn btn-success stretched-link" href="kidjo.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <img src="images/images (10)_copy_800x600.jpeg" alt="wiz khalifa" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title  text-uppercase">
+                                Wiz Khalifa, un nouvel album et une tournée mondiale en 2023?</h4>
+
+                            <h5>Wiz Khalifa en studio? Si pour le moment aucune information n'a encore filtré, les sites
+                                spécialisés eux, ne parlent que de ça (surtout depuis fin juin 2022, ndlr): Wiz Khalifa
+                                préparerait son grand retour et travaillerait en ce moment même à un nouvel album
+                                studio.
+
+                            </h5>
+                            <p>Le célèbre rappeur, aujourd'hui âgé de 34 ans, passerait ses journées en studio à
+                                enregistrer ce que beaucoup pressentent comme l'album du retour aux sources.</p>
+                            <a class="btn btn-success stretched-link" href="wiz.html" data-bs-target="#card1"
+                                aria-controls="card1">
+                                Lire la suite</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (
+            tooltipTriggerEl
+        ) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+<footer>
+    <div class="bg-secondary mt-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col fs-4">
+                    <ul class="list-inline text-center text-white">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">A propos</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" type="button" data-bs-toggle="modal"
+                                data-bs-target="#mentionslegales">Mentions légales</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" type="button" data-bs-toggle="modal"
+                                data-bs-target="#termes">Conditions d'utilisations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-white mt-3">
+                <div class="col-12 col-md-4">
+                    <p class="fs-4 mt-3 text-center">
+                        H-BLOG/Copyright © 2022. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-12 text-center mt-3 mt-md-0 col-md-3 offset-md-5">
+                    <h6 class="footer__title fs-4">Contacts</h6>
+                    <ul class="footer__list"></ul>
+                    <ul class="list-inline fs-3">
+                        <li class="list-inline-item">
+                            <a href="mailto:akodjenouherve13@gmail.com" data-bs-toggle="tooltip" title="E-mail"><i
+                                    class="bi bi-envelope-fill text-danger bg-white"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/jonathan.peter.31149" data-bs-toggle="tooltip"
+                                title="Facebook">
+                                <i class="bi bi-facebook text-primary bg-white"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://wa.me/+22966748936" data-bs-toggle="tooltip" title="Whatsapp"><i
+                                    class="bi bi-whatsapp text-white bg-success"></i></a>
+                        </li>
+                        <p>
+                            <li class="list-inline-item">
+                                <i class="bi bi-phone text-light"></i>
+                                +22966748936
+                            </li>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-dark" id="mentionslegales" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Mentions légales
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam sit amet gravida dolor, bibendum
+                        mollis dolor. Mauris ullamcorper vulputate sapien,
+                        non molestie urna hendrerit finibus. Sed at est
+                        malesuada, mattis nibh vitae, porta justo. Duis
+                        vestibulum ex id nisl egestas facilisis. Cras eget
+                        enim vestibulum, suscipit ipsum quis, sollicitudin
+                        erat. Aliquam gravida nulla in hendrerit rutrum.
+                        Proin a augue enim. Aliquam fringilla venenatis sem,
+                        sed pulvinar turpis. Sed lacinia augue ac purus
+                        fringilla volutpat. Aliquam efficitur iaculis libero
+                        in efficitur. Vestibulum consectetur arcu eget nisi
+                        viverra dignissim. Nulla facilisi. Donec at dui
+                        sapien. Aenean pretium mi a turpis vehicula pretium.
+                    </p>
+                    <p>
+                        Curabitur laoreet dui vel imperdiet ullamcorper.
+                        Suspendisse sollicitudin odio non nibh ullamcorper
+                        semper ac ut ipsum. Cras auctor, lectus id bibendum
+                        feugiat, ex quam tristique tortor, sollicitudin
+                        efficitur purus justo non lorem. In hac habitasse
+                        platea dictumst. Cras eget lacus ac nibh posuere
+                        fermentum a sed lorem. Donec in mauris purus. Proin
+                        in quam ut odio pulvinar sollicitudin. Donec feugiat
+                        sapien ac orci vestibulum, vel tincidunt leo tempor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-dark" id="termes" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModal">
+                        Conditions d'utilisation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam sit amet gravida dolor, bibendum
+                        mollis dolor. Mauris ullamcorper vulputate sapien,
+                        non molestie urna hendrerit finibus. Sed at est
+                        malesuada, mattis nibh vitae, porta justo. Duis
+                        vestibulum ex id nisl egestas facilisis. Cras eget
+                        enim vestibulum, suscipit ipsum quis, sollicitudin
+                        erat. Aliquam gravida nulla in hendrerit rutrum.
+                        Proin a augue enim. Aliquam fringilla venenatis sem,
+                        sed pulvinar turpis. Sed lacinia augue ac purus
+                        fringilla volutpat. Aliquam efficitur iaculis libero
+                        in efficitur. Vestibulum consectetur arcu eget nisi
+                        viverra dignissim. Nulla facilisi. Donec at dui
+                        sapien. Aenean pretium mi a turpis vehicula pretium.
+                    </p>
+                    <p>
+                        Curabitur laoreet dui vel imperdiet ullamcorper.
+                        Suspendisse sollicitudin odio non nibh ullamcorper
+                        semper ac ut ipsum. Cras auctor, lectus id bibendum
+                        feugiat, ex quam tristique tortor, sollicitudin
+                        efficitur purus justo non lorem. In hac habitasse
+                        platea dictumst. Cras eget lacus ac nibh posuere
+                        fermentum a sed lorem. Donec in mauris purus. Proin
+                        in quam ut odio pulvinar sollicitudin. Donec feugiat
+                        sapien ac orci vestibulum, vel tincidunt leo tempor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

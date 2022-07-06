@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://kit.fontawesonme.com/14273d579a.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <title>SPORT</title>
+    </head>
+    <style>
+        .card {
+            transform: scale(1);
+            transition: transform ease-in-out 1s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"
+                    ><img
+                        src="images/Screenshot_20220622-133325.jpg"
+                        alt="Site logo"
+                        width="70"
+                        height="70"
+                        class="d-inline-block"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse fs-4 justify-content-end"
+                    id="navbarContent"
+                >
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link text-white"
+                                aria-current="page"
+                                href="index.html"
+                                >Acceuil</a
+                            >
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Articles
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark gy-5 fs-5"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="histoire.html"
+                                        >Histoire</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="actualité.html"
+                                        >Actualité</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="musique.html"
+                                        >Musique</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="cinema.html"
+                                        >Cinema</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sport.html"
+                                        >Sport</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="#"
+                                id="navbarDropdown2"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Liens
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark gy-5 fs-5"
+                                aria-labelledby="navbarDropdown2"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="inscription.html"
+                                        >Inscription</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="connexion.html"
+                                        >Connexion</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="a_propos.html"
+                                        >A propos</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="dropdown-item"
+                                        aria-current="page"
+                                        href="contact.html"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form role="search" class="d-flex ms-5">
+                        <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Rechercher..."
+                            aria-label="Search"
+                        />
+                        <a class="btn btn-primary mx-3" href="#">Rechercher</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <section class="mt-5 pt-5 text-white">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col text-center text-danger">
+                        <h1
+                            style="
+                                font-family: 'Tibetan Machine Uni';
+                                font-size: 4em;
+                            "
+                        >
+                            <marquee>SPORT</marquee>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col text-center text-primary">
+                        <h1>FRANCE-CROATIE</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card">
+                            <img
+                                src="images/Capture d’écran de 2022-06-13 19-33-21_copy_986x404.png"
+                                alt="FRANCE-CROATIE"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-4 text-dark">
+                                <h1 class="card-title text-danger">
+                                    FRANCE-CROATIE : les Bleus avec Mbappé et
+                                    Benzema, Griezmann sur le banc
+                                </h1>
+                                <p>
+                                    L'équipe de France évoluera pour la
+                                    troisième fois d'affilée à 4 derrière contre
+                                    la Croatie, lundi au Stade de France
+                                    (20h45). Devant Mike Maignan dans le but,
+                                    Didier Deschamps fera confiance à une ligne
+                                    défensive Koundé-Konaté-Kimpembe-Digne. Au
+                                    milieu, les deux Marseillais Mattéo
+                                    Guendouzi et Boubacar Kamara seront
+                                    associés.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center text-primary">
+                        <h1>TCHOUAMENI Aurélien</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card text-dark">
+                            <img
+                                src="images/Capture d’écran de 2022-06-13 19-36-02_copy_986x404.png"
+                                alt="TCHOUAMENI Aurélien"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-4">
+                                <h1 class="card-title text-danger">
+                                    Le Français Aurélien Tchouaméni rejoint le
+                                    Real Madrid pour six ans
+                                </h1>
+                                <p>
+                                    Le Real Madrid et l'AS Monaco ont annoncé le
+                                    départ officiel d'Aurélien Tchouaméni du
+                                    club monégasque pour rejoindre "los
+                                    Blancos", sacrés champions d'Europe. Le
+                                    Français, âgé de 22 ans, doit encore signer
+                                    son contrat qui lui permettra de jouer six
+                                    saisons aux côtés du Real Madrid.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center text-primary">
+                        <h1>PSG</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card text-dark">
+                            <img
+                                src="images/Capture d’écran de 2022-06-13 19-37-09_copy_986x404.png"
+                                alt="PSG"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-4">
+                                <h1 class="card-title text-danger">
+                                    Football : le PSG officialise Luis Campos,
+                                    en attendant Zidane ?
+                                </h1>
+                                <p>
+                                    Le Paris Saint-Germain a officialisé
+                                    vendredi l'arrivée du Portugais Luis Campos
+                                    en charge "de l'organisation, du recrutement
+                                    et de la performance de l'équipe
+                                    professionnelle". Une première pierre au
+                                    nouveau projet vanté par le club qui
+                                    pourrait être suivi de l'arrivée de Zinedine
+                                    Zidane selon plusieurs médias français.
+                                </p>
+                                <p>
+                                    Le PSG a un nouveau projet : tel est le mot
+                                    d'ordre depuis la prolongation du contrat de
+                                    la superstar française Kylian Mbappé. Ce mot
+                                    d'ordre est suivi d'effets puisque les
+                                    grandes manœuvres sont lancées. Le club a
+                                    annoncé vendredi 10 juin l'arrivée du
+                                    Portugais Luis Campos en
+                                    qualité de "conseiller sportif". Une arrivée
+                                    qui pourrait être suivie d'autre
+                                    autre : celle de la légende Zinedine Zidane
+                                    sur le banc, selon plusieurs médias français
+                                    dont Europe 1.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col text-center text-primary">
+                        <h1>Rafael NADAL</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card text-dark">
+                            <img
+                                src="images/Capture d’écran de 2022-06-13 19-38-55_copy_986x404.png"
+                                alt="Rafael NADAL"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-4">
+                                <h1 class="card-title text-danger">
+                                    Rafael Nadal à Roland-Garros, "roi de la
+                                    terre battue" au palmarès hors norme
+                                </h1>
+                                <p>
+                                    Rafael Nadal a remporté, dimanche, sa 14e
+                                    Coupe des Mousquetaires à Roland-Garros face
+                                    au Norvégien Casper Ruud. Comme un clin
+                                    d'œil, le "roi de la terre battue" s'est
+                                    imposé un 5 juin comme lors de son premier
+                                    titre à la Porte d'Auteuil, en 2005. Retour
+                                    sur 17 ans de participation du Majorquin,
+                                    qui n'a concédé que trois défaites au total
+                                    dans ce tournoi du Grand Chelem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center text-primary">
+                        <h1>ROMAIN BARDET</h1>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card text-dark">
+                            <img
+                                src="images/MjAyMjA2MWE0ZjhlMDkyNjFhNDkxZjM5YTJjOGRjYTlkMDMyZGU_copy_986x404.jpeg"
+                                alt="Roland-Garros"
+                                class="card-img-top"
+                            />
+                            <div class="card-body fs-4">
+                                <h1 class="card-title text-danger">
+                                    Tour de France 2022. Romain Bardet annonce
+                                    qu’il va participer à la Grande Boucle
+                                </h1>
+                                <p>
+                                    Le coureur Français Romain Bardet a annoncé
+                                    qu’il allait participer au Tour de France
+                                    2022, qui démarre le 1er juillet prochain
+                                    (jusqu’au 24) avec son équipe du Team DSM. À
+                                    31 ans, il s’apprête à courir la Grande
+                                    Boucle où il a déjà terminé deuxième du
+                                    général, en 2016, et meilleur grimpeur, en
+                                    2019.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (
+                tooltipTriggerEl
+            ) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        </script>
+    </body>
+    <footer>
+        <div class="bg-secondary mt-5">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col fs-4">
+                        <ul class="list-inline text-center text-white">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-white">A propos</a>
+                            </li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="#"
+                                    class="text-white"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#mentionslegales"
+                                    >Mentions légales</a
+                                >
+                            </li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="#"
+                                    class="text-white"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#termes"
+                                    >Conditions d'utilisations</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-white mt-3">
+                    <div class="col-12 col-md-4">
+                        <p class="fs-4 mt-3 text-center">
+                            H-BLOG/Copyright © 2022. Tous droits réservés.
+                        </p>
+                    </div>
+                    <div
+                        class="col-12 text-center mt-3 mt-md-0 col-md-3 offset-md-5"
+                    >
+                        <h6 class="footer__title fs-4">Contacts</h6>
+                        <ul class="footer__list"></ul>
+                        <ul class="list-inline fs-3">
+                            <li class="list-inline-item">
+                                <a
+                                    href="mailto:akodjenouherve13@gmail.com"
+                                    data-bs-toggle="tooltip"
+                                    title="E-mail"
+                                    ><i
+                                        class="bi bi-envelope-fill text-danger bg-white"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://www.facebook.com/jonathan.peter.31149"
+                                    data-bs-toggle="tooltip"
+                                    title="Facebook"
+                                >
+                                    <i
+                                        class="bi bi-facebook text-primary bg-white"
+                                    ></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://wa.me/+22966748936"
+                                    data-bs-toggle="tooltip"
+                                    title="Whatsapp"
+                                    ><i
+                                        class="bi bi-whatsapp text-white bg-success"
+                                    ></i
+                                ></a>
+                            </li>
+                            <p>
+                                <li class="list-inline-item">
+                                    <i class="bi bi-phone text-light"></i>
+                                    +22966748936
+                                </li>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade text-dark"
+            id="mentionslegales"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Mentions légales
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aliquam sit amet gravida dolor, bibendum
+                            mollis dolor. Mauris ullamcorper vulputate sapien,
+                            non molestie urna hendrerit finibus. Sed at est
+                            malesuada, mattis nibh vitae, porta justo. Duis
+                            vestibulum ex id nisl egestas facilisis. Cras eget
+                            enim vestibulum, suscipit ipsum quis, sollicitudin
+                            erat. Aliquam gravida nulla in hendrerit rutrum.
+                            Proin a augue enim. Aliquam fringilla venenatis sem,
+                            sed pulvinar turpis. Sed lacinia augue ac purus
+                            fringilla volutpat. Aliquam efficitur iaculis libero
+                            in efficitur. Vestibulum consectetur arcu eget nisi
+                            viverra dignissim. Nulla facilisi. Donec at dui
+                            sapien. Aenean pretium mi a turpis vehicula pretium.
+                        </p>
+                        <p>
+                            Curabitur laoreet dui vel imperdiet ullamcorper.
+                            Suspendisse sollicitudin odio non nibh ullamcorper
+                            semper ac ut ipsum. Cras auctor, lectus id bibendum
+                            feugiat, ex quam tristique tortor, sollicitudin
+                            efficitur purus justo non lorem. In hac habitasse
+                            platea dictumst. Cras eget lacus ac nibh posuere
+                            fermentum a sed lorem. Donec in mauris purus. Proin
+                            in quam ut odio pulvinar sollicitudin. Donec feugiat
+                            sapien ac orci vestibulum, vel tincidunt leo tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade text-dark"
+            id="termes"
+            tabindex="-1"
+            aria-labelledby="exampleModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal">
+                            Conditions d'utilisation
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aliquam sit amet gravida dolor, bibendum
+                            mollis dolor. Mauris ullamcorper vulputate sapien,
+                            non molestie urna hendrerit finibus. Sed at est
+                            malesuada, mattis nibh vitae, porta justo. Duis
+                            vestibulum ex id nisl egestas facilisis. Cras eget
+                            enim vestibulum, suscipit ipsum quis, sollicitudin
+                            erat. Aliquam gravida nulla in hendrerit rutrum.
+                            Proin a augue enim. Aliquam fringilla venenatis sem,
+                            sed pulvinar turpis. Sed lacinia augue ac purus
+                            fringilla volutpat. Aliquam efficitur iaculis libero
+                            in efficitur. Vestibulum consectetur arcu eget nisi
+                            viverra dignissim. Nulla facilisi. Donec at dui
+                            sapien. Aenean pretium mi a turpis vehicula pretium.
+                        </p>
+                        <p>
+                            Curabitur laoreet dui vel imperdiet ullamcorper.
+                            Suspendisse sollicitudin odio non nibh ullamcorper
+                            semper ac ut ipsum. Cras auctor, lectus id bibendum
+                            feugiat, ex quam tristique tortor, sollicitudin
+                            efficitur purus justo non lorem. In hac habitasse
+                            platea dictumst. Cras eget lacus ac nibh posuere
+                            fermentum a sed lorem. Donec in mauris purus. Proin
+                            in quam ut odio pulvinar sollicitudin. Donec feugiat
+                            sapien ac orci vestibulum, vel tincidunt leo tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

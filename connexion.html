@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesonme.com/14273d579a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>CONNEXION</title>
+  </head>
+  <style>
+    body {
+      margin-top: 10%;
+      font-size: 1.2em;
+      background: url(images/fondconnexion.gif);
+    }
+
+    .one {
+      background-color: rgb(7, 7, 7);
+    }
+
+    label,
+    span {
+      color: orange;
+    }
+  </style>
+
+  <body>
+    <div class="container text-white py-5 one">
+      <div class="row align-items-center gy-4 gy-md-0">
+        <div class="col-lg-3 col-10 offset-md-1 offset-3">
+          <img src="images/logo.jpg" alt="logo" class="pt-md-5" />
+        </div>
+        <div class="col offset-md-1">
+          <form>
+            <p class="fs-2 text-center">Inscrivez-vous à <span>H~BLOG</span></p>
+            <br />
+            <label for="email" class="form-label"
+              >NUMERO DE TELEPHONE OU ADRESSE E-MAIL</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            /><br />
+            <label for="password" class="form-label">MOT DE PASSE</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required
+            /><br />
+            <div class="col text-center">
+              <p>
+                <a href="index.html" class="btn btn-warning fs-5" role="button">
+                  Se connecter</a
+                >
+              </p>
+              <p><a href="#">Mot de passe oublié ?</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col text-center text-white">
+          <p>------------------------ ou ------------------------</p>
+          <p>
+            <a
+              href="inscription.html"
+              class="btn btn-success fs-5"
+              role="button"
+              >Créer un nouveau compte</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

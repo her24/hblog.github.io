@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesonme.com/14273d579a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <title>INSCRIPTION</title>
+        </head>
+        <style>
+            body
+            {
+              
+                background:url(images/fondconnexion.gif);
+                color: white;
+                font-size: 1.2em;
+            }
+        </style>
+         <header class="py-1">
+            <h1 class="text-center text-danger bg-light fixed-top">INSCRIPTION</h1>
+            </header>       
+        <body>
+           
+           <section class="my-5">
+            <div class="container py-5" style="margin-top: 10%;">
+                <form>
+                  <div class="row mb-4">
+                      <div class="col-12">
+                       <label for="name" class="form-label text-warning fs-4">NOM</label>
+                       <input type="text" class="form-control" id="name" name="name" placeholder="HOBBS" required>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <label for="first-name" class="form-label text-warning fs-4">PRENOM</label>
+                          <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Stéphanie" required>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <label for="date" class="form-label text-warning fs-4">DATE DE NAISSANCE</label>
+                          <input type="date" class="form-control" id="date" name="date" required>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <label for="NUMERO" class="form-label text-warning fs-4">NUMERO DE TELEPHONE</label>
+                          <input type="text" class="form-control" id="NUMERO" name="NUMERO" required>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                      <div class="col-12 text-warning fs-4">
+                          <label for="email" class="form-label">ADRESSE E-MAIL</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="stephaniemiroux@gmail.com">
+                      </div>
+                  </div>
+                  <div class="row mb-5">
+                      <div class="col-12">
+                          <p class="text-warning fs-4 ">GENRE:</p>
+  <div class="mb-3 form-check">
+  <input type="radio" class="form-check-input" id="homme" name="genre" required>
+  <label for="homme" class="form-check-label">HOMME</label>
+  </div>
+  <div class="form-check">
+  <input type="radio" class="form-check-input" id="femme" name="genre" required>
+  <label for="femme" class="form-check-label">FEMME</label>
+  </div>
+                      </div>
+                  </div>
+                  <div class="row mb-5">
+                      <div class="col-12">
+                          <input type="checkbox" class="form-check-input" id="agree" name="agree" required>&nbsp;&nbsp;&nbsp;J'accepte les conditions d'utilisation et la politique de confidentialité.
+                      </div>
+                  </div>
+                  <div class="row mt-2">
+                      <div class="col-6 gx-5 gx-md-0 offset-md-3">
+                          <p>
+                              <a
+                                href="index.html"
+                                class="btn btn-primary fs-5"
+                                role="button"
+                                >S'inscrire</a
+                              >
+                            </p>
+                      </div>
+                      <div class="col offset-md-0 offset-1 gx-4 gx-md-0">
+                          <button type="reset" class="btn btn-danger fs-5">ANNULER</button>
+                      </div>
+                  </div>
+                </form>
+             </div>
+           </section>
+
+           <br /><br /><br />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+        </body>
+    </html>
